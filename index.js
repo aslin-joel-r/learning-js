@@ -1,1 +1,4 @@
-console.log("%c Learning the javascript ","color:red;font-size:50px");
+var name='Aslin joel R';
+var greeting = ' Hello ';
+
+console.log(greeting+name);
