@@ -2,4 +2,4 @@
 
 ### Going deep in to the js 🌊🦈
 
-#### Challenge🏆🔥 : coding in nodepad without using the IDE's 🚀
+#### Challenge🏆🔥 : coding in notepad and console without using the IDE's 🚀
