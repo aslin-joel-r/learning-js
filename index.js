@@ -1,4 +1,3 @@
-var name='Aslin joel R';
-var greeting = ' Hello ';
-
-console.log(greeting+name);
+console.log(1+5+8)
+console.log(21<7)
+console.log(3==3)
