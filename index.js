@@ -1,5 +1,5 @@
-console.log(100=='100') // true
-console.log(100==='100') // false
+console.log(true && true) // true
+console.log(true && false) // false
 
-console.log(100!='100') // false
-console.log(100!=='100') // true
+console.log(true || false) // true
+console.log(false || false) // false
