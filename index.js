@@ -1,36 +1,24 @@
-// Trying the condition statements
+// Trying the switch statements
 
-// if and else conditions 
+var place='1st';
 
-var mark=90;
-var grade='';
+switch(place){
+    case '1st':
+        console.log('Awesome' );
+        break;
 
-if (mark>=90){
-    grade='O';
-    console.log('Your grade is :',grade,"\nOutstanding Performance..!")
-}
+    case '2nd':
+        console.log('Excellent' );
+        break;
 
-if (mark>=80){
-    grade='A';
-    console.log('Your grade is :',grade,"\nVery Good..!")
-}
+    case '3rd':
+         console.log('Very Good' );
+         break;
 
-if (mark>=70){
-    grade='B';
-    console.log('Your grade is :',grade,"\nGood..!")
-}
+    case '4th':
+        console.log('Good' );
+        break;
 
-if (mark>=60){
-    grade='C';
-    console.log('Your grade is :',grade,"\nTry More..!")
-}
-
-if (mark>=35){
-    grade='D';
-    console.log('Your grade is :',grade,"\nYou have just passed..!")
-}
-
-else{
-    grade='F';
-    console.log('Your grade is :',grade,"\nYou have failed..!")
+    default:
+        console.log('Nice' );
 }
