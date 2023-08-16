@@ -1,24 +1,26 @@
-// Trying the switch statements
+// Trying the for loops 
 
-var place='1st';
-
-switch(place){
-    case '1st':
-        console.log('Awesome' );
-        break;
-
-    case '2nd':
-        console.log('Excellent' );
-        break;
-
-    case '3rd':
-         console.log('Very Good' );
-         break;
-
-    case '4th':
-        console.log('Good' );
-        break;
-
-    default:
-        console.log('Nice' );
+for(var i=1;i<=5;i++){
+    console.log(i)
 }
+
+console.log('Counting completed!')
+
+// Trying the while loop
+
+var i=5;
+
+while (i>0)
+{
+    console.log(i);
+    i--;
+}
+console.log('Countdown finished!')
+
+
+var year= 2018;
+while (year<=2022){
+    console.log(year);
+    year++;
+}
+
