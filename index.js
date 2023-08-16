@@ -1,26 +1,7 @@
-// Trying the for loops 
+// Trying the nested loops
 
-for(var i=1;i<=5;i++){
-    console.log(i)
+for (var i=0;i<=10;i++){
+    for (var j=0;j<=10;j++){
+        console.log(i,'*',j,'=',i*j)
+    }
 }
-
-console.log('Counting completed!')
-
-// Trying the while loop
-
-var i=5;
-
-while (i>0)
-{
-    console.log(i);
-    i--;
-}
-console.log('Countdown finished!')
-
-
-var year= 2018;
-while (year<=2022){
-    console.log(year);
-    year++;
-}
-
