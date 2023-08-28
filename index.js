@@ -1,13 +1,16 @@
-// Trying the functions and arrays
+var word='helloeveryonehowareyou'
 
-var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink'];
+function letterFinder(match,word){
+    for(let i=0;i<word.length;i++){
 
-function listArrayItems(colors){
-    
-    for(let i=0;i<colors.length;i++){
-            console.log(i,colors[i])
-            
+        if(word[i]==match){
+            console.log('Found the', match, 'at', i)
+        }
+        else{
+            //console.log("Match not found");
+        }
     }
 }
 
-listArrayItems(colors); 
+letterFinder('l',word);
+
