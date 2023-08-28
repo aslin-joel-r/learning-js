@@ -1,7 +1,13 @@
-// Trying the nested loops
+// Trying the functions and arrays
 
-for (var i=0;i<=10;i++){
-    for (var j=0;j<=10;j++){
-        console.log(i,'*',j,'=',i*j)
+var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink'];
+
+function listArrayItems(colors){
+    
+    for(let i=0;i<colors.length;i++){
+            console.log(i,colors[i])
+            
     }
 }
+
+listArrayItems(colors); 
