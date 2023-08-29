@@ -1,16 +1,9 @@
-var word='helloeveryonehowareyou'
-
-function letterFinder(match,word){
-    for(let i=0;i<word.length;i++){
-
-        if(word[i]==match){
-            console.log('Found the', match, 'at', i)
-        }
-        else{
-            //console.log("Match not found");
-        }
-    }
+var car ={
+    model:'Rolls Royce',
+    cost:200000,
+    tax:3000,
+    legal:true,
+    color:'red'
 }
-
-letterFinder('l',word);
-
+car.seats=6;
+console.log(car)
