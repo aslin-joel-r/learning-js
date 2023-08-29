@@ -1,10 +1,21 @@
-// Trying the build in string functions in js
+var clothes=[]
 
-var msg="hello world"
-var newMsg="welcome".concat(" to ").concat(msg)
+clothes.push('shirt');
+clothes.push('t-shirt');
+clothes.push('phants');
+clothes.push('caps');
+clothes.push('cotton phants');
 
-console.log(msg.length)
-console.log(msg.charAt(3))
-console.log(msg.indexOf('o'))
-console.log(newMsg)
-console.log(msg.split('o'))
+clothes.pop()
+
+clothes.push('lygra phants');
+
+console.log(clothes[2])
+
+var favCar ={
+    color:'red',
+}
+
+favCar.covertible=true;
+
+console.log(favCar)
