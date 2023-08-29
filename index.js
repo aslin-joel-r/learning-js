@@ -1,13 +1,10 @@
-var arr=[]
+// Trying the build in string functions in js
 
-function collector(a,b,c,d){
-    arr.push(a);
-    arr.push(b);
-    arr.push(c);
-    arr.push(d);
-    arr.pop();
-    
-    return arr
-}
+var msg="hello world"
+var newMsg="welcome".concat(" to ").concat(msg)
 
-console.log(collector('aslin','joel','r','cse15'))
+console.log(msg.length)
+console.log(msg.charAt(3))
+console.log(msg.indexOf('o'))
+console.log(newMsg)
+console.log(msg.split('o'))
