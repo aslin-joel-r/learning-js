@@ -1,4 +1,6 @@
+var a='helloworldwelcometojavascriptprogramming';
+for (let i=0;i<a.length;i++){
+    console.log(a[i])
+}
 
-var a=Math.ceil(Math.random()*100);
-
-console.log(a)
+console.log()
