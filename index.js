@@ -1,21 +1,4 @@
-var clothes=[]
 
-clothes.push('shirt');
-clothes.push('t-shirt');
-clothes.push('phants');
-clothes.push('caps');
-clothes.push('cotton phants');
+var a=Math.ceil(Math.random()*100);
 
-clothes.pop()
-
-clothes.push('lygra phants');
-
-console.log(clothes[2])
-
-var favCar ={
-    color:'red',
-}
-
-favCar.covertible=true;
-
-console.log(favCar)
+console.log(a)
