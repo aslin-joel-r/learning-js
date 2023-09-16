@@ -1,15 +1,16 @@
-// using the null , undefined and the empty datatypes
-var a;
+function addTwoNums(a,b){
+    try{
+        if (typeof(a)!='number') throw new ReferenceError (console.log("a is not a number"));
 
-console.log("undefined data : ",a);
+        if (typeof(b)!='number')  throw new ReferenceError (console.log("b is not a number"));
+        
+        else console.log(a+b);
+    }
+    catch(err){
+        console.log("Error : ",err);
+    }
+}
 
-a='';
+addTwoNums('5',8);
 
-console.log("Empty data : ",a);
-
-a='abc';
-
-console.log("null data : ", a.match('d'));
-
-
-
+console.log("It still works...");
