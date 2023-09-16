@@ -1,18 +1,15 @@
-// Bug
-var a=5;
-var b='hello';
+// using the null , undefined and the empty datatypes
+var a;
 
-var c=a+b
-console.log(c)
+console.log("undefined data : ",a);
 
-// Syntax error
+a='';
 
-var d='error;
+console.log("Empty data : ",a);
 
-// Reference error
+a='abc';
 
-console.log(d);
+console.log("null data : ", a.match('d'));
 
-// Type error
 
-(5).pop;
+
