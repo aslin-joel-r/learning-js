@@ -24,7 +24,13 @@ lion.living();
 class Birds extends Animals{
 
     constructor (name,type){
-        super(name,type);
+        super(name,type); // using super keyword to access the parent properties
+        super.living();
+    }
+
+    living(){
+        
+        console.log("I am a method from the bird class");
     }
     
 }
