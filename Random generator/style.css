@@ -1,0 +1,31 @@
+body{
+    padding-left: 40px;
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+input{
+   height: 40px;
+   width:100px !important ;
+   border-radius: 5px;
+    }
+label{
+    font-size: 25px;
+    font-weight: bold;
+}
+h1{
+    font-size: 60px;
+}
+
+.btn{
+   
+    font-size: 20px;
+    font-weight: bolder;
+    background-color:purple ;
+    color:white;
+    
+}
+.inp{
+    height:35px;
+   
+}
