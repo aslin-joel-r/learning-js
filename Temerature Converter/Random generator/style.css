@@ -1,0 +1,41 @@
+body{
+  
+    font-family: sans-serif;
+}
+div{
+    margin: auto;
+    margin-top: 50px;
+    padding: 30px;
+    text-align: center;
+    max-width: 350px;
+    
+    border-radius: 20px;
+    box-shadow: 5px 5px 30px purple;
+    
+}
+label{
+    font-size: 20px;
+    font-weight: bolder;
+}
+h1,#display{
+    font-size: 40px;
+}
+    
+#inp{
+    height:30px;
+    width:150px;
+    font-size: 25px;
+    border:3px solid rgb(0, 0, 0);
+}
+button{
+    height: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    width: 100px;
+    background-color: purple;
+    color:white;
+    border-radius: 10px;
+}
+.radio{
+    .radio
+}
