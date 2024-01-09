@@ -1,31 +1,50 @@
-body{
-    padding-left: 40px;
-    padding-top: 30px;
+body {
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    
 }
-input{
-   height: 40px;
-   width:100px !important ;
-   border-radius: 5px;
-    }
-label{
+
+#container {
+    margin: auto;
+    margin-top: 80px;
+    height: 500px;
+    width: 900px;
+    padding: 30px;
+    box-shadow: 5px 5px 15px purple;
+    
+}
+
+#pass-length {
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
     font-size: 25px;
     font-weight: bold;
 }
-h1{
-    font-size: 60px;
+
+label {
+    font-size: 25px;
+    font-weight: bold;
 }
 
-.btn{
-   
+h1 {
+    font-size: 40px;
+}
+
+#display {
+    color: purple;
+}
+
+.btn {
     font-size: 20px;
     font-weight: bolder;
-    background-color:purple ;
-    color:white;
-    
+    background-color: purple;
+    color: white;
+    height: 50px;
+    width: 110px;
+    border-radius: 10px;
 }
-.inp{
-    height:35px;
-   
+.check{
+    height:20px;
+    width:20px;
+    
 }
