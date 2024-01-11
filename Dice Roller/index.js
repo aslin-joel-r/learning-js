@@ -8,7 +8,7 @@ function roll(){
     diceimages=document.getElementById('diceimages');
 
     for(let i=0;i<dice;i++){
-        di=Math.floor(Math.random()*5)+1;
+        di=Math.round(Math.random()*5)+1;
         dices.push(di);
         images.push(`<img src="images/${di}.png" >`)
        
