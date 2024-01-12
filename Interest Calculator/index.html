@@ -11,13 +11,13 @@
     <h1>Interest Calculator</h1>
  <h1 id="display">0</h1>
  <label >Principal Amount</label><br><br>
- <input type="text" id='pa' class="inp" required><br><br>
+ <input type="number" id='pa' class="inp" required><br><br>
  <label >Interest Rate</label><br><br>
- <input type="text" class="inp" id="ir" required><br><br>
+ <input type="number" class="inp" id="rate" required><br><br>
  <label>Years</label><br><br>
- <input type="text" class="inp" id="year" required><br><br>
+ <input type="number" class="inp" id="year" required><br><br>
    <input type="button" class="btn" value="Reset" id="reset" onclick="reset()">
-   <input type="button" class="btn" value="Submit" id="generator" onclick="submit()">
+   <input type="button" class="btn" value="Submit" id="generator" onclick="interestCalulate()">
  
   </div>
    <script src="index.js"></script>
