@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#clock{
+    font-size: 80px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 5px 5px 25px purple;
+   color:purple;
+   height: 150px;
+   width:700px;
+   padding-top:30px;
+   margin: auto;
+   border-radius: 30px;
+}
