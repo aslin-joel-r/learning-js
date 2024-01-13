@@ -3,13 +3,18 @@ let t;
 let num1;
 let op;
 function numbers(value){
-
+    if(display.value=='0'){
+        display.value=value;
+    }
+   else{
     display.value+=value;
+   }
 }
 
 function operation(symbol){
     op=symbol
     console.log(typeof symbol)
+    
     display.value+=symbol;
     num1=display.value;
     console.log(typeof num1)
@@ -41,9 +46,15 @@ function equals(){
     }
     else if(op=='/'){
         ans=num1/num2;
-        ans=ans.toFixed(5)
+        console.log(typeof ans)
+
+      if(ans%1!=0){ // checking is the number is float or not
+        ans=ans.toFixed(3)
+      }
+      
     }
     display.value=ans;
+    console.log(ans)
 }
 function reset(){
     display.value=0;
