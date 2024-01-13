@@ -1,7 +1,8 @@
 const display=document.getElementById('display');
 let t;
 let num1;
-let op;
+let operator;
+
 function numbers(value){
     if(display.value=='0'){
         display.value=value;
@@ -12,7 +13,7 @@ function numbers(value){
 }
 
 function operation(symbol){
-    op=symbol
+    operator=symbol
     console.log(typeof symbol)
     
     display.value+=symbol;
@@ -35,16 +36,16 @@ function equals(){
     let ans;
     
   
-    if(op=='+'){
+    if(operator=='+'){
         ans=num1+num2;
     }
-    else if(op=='-'){
+    else if(operator=='-'){
         ans=num1-num2;
     }
-    else if(op=='*'){
+    else if(operator=='*'){
         ans=num1*num2;
     }
-    else if(op=='/'){
+    else if(operator=='/'){
         ans=num1/num2;
         console.log(typeof ans)
 
