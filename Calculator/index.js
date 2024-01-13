@@ -54,6 +54,9 @@ function equals(){
       }
       
     }
+     if(isNaN(ans)){
+        ans="Math Error"
+    }
     display.value=ans;
     console.log(ans)
 }
