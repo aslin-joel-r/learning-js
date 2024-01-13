@@ -9,26 +9,26 @@
 <body><br>
     
     <div>
-        <input type="number" readonly>
-        <button class="num">1</button>
-        <button class="num">2</button>
-        <button class="num">3</button>
-        <button class="num">4</button>
-        <button class="num">5</button>
-        <button class="num">6</button>
-        <button class="num">7</button>
-        <button class="num">8</button>
-        <button class="num">9</button>
-        <button class="num">0</button>
+        <input id="display" type="text" readonly >
+        <button class="num" onclick="numbers(1)">1</button>
+        <button class="num" onclick="numbers(2)">2</button>
+        <button class="num" onclick="numbers(3)">3</button>
+        <button class="num" onclick="numbers(4)">4</button>
+        <button class="num" onclick="numbers(5)">5</button>
+        <button class="num" onclick="numbers(6)">6</button>
+        <button class="num" onclick="numbers(7)">7</button>
+        <button class="num" onclick="numbers(8)">8</button>
+        <button class="num" onclick="numbers(9)">9</button>
+        <button class="num" onclick="numbers(0)">0</button>
 
-        <button class="operators">+</button>
-        <button class="operators">-</button>
-        <button class="operators">*</button>
-        <button class="operators">/</button>
+        <button class="operators" onclick="operation('+')">+</button>
+        <button class="operators" onclick="operation('-')">-</button>
+        <button class="operators" onclick="operation('*')">*</button>
+        <button class="operators" onclick="operation('/')">/</button>
 
-        <button class="specific">.</button>
-        <button class="specific">C</button>
-        <button class="specific">=</button>
+        <button class="specific" onclick="point()">.</button>
+        <button class="specific" onclick="reset()">C</button>
+        <button class="specific" onclick="equals()" >=</button>
 
 
     </div>
