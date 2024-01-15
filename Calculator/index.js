@@ -54,6 +54,9 @@ function equals(){
       }
       
     }
+    if(display.value=='0' ){
+        ans=0
+    }
      if(isNaN(ans)){
         ans="Math Error"
     }
@@ -65,4 +68,10 @@ function reset(){
 }
 function point(){
     display.value+='.'
+}
+function del(){
+    let dis=display.value;
+    let len=dis.length;
+    dis=dis.slice(0,len-1);
+    display.value=dis;
 }
