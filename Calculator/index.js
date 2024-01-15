@@ -12,13 +12,6 @@ function numbers(value){
    }
 }
 
-function operation(symbol){
-    operator=symbol
-    console.log(typeof symbol)
-    
-    display.value+=symbol;
-
-}
 
 function equals(){
     let a = display.value;
