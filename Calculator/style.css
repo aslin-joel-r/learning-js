@@ -47,7 +47,16 @@ button:hover{
     color:purple;
     border:1px solid purple
 }
-/* button.operators{
-    background-color:yellow;
-    color:black
-} */
+
+#point{
+    font-size: 60px;
+}
+ button.operators{
+    background-color:white;
+    color:purple;
+    border: 3px solid purple;
+} 
+button.operators:hover{
+    background-color: purple;
+    color: white;
+}
