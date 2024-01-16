@@ -9,6 +9,7 @@ function numbers(value){
     display.value+=value;
    }
 }
+
 function operators(value){
    
     display.value+=value;
@@ -19,8 +20,17 @@ function equals(){
         const num = display.value;
         console.log(num)
         let result = math.evaluate(num);
-        display.value=result
+       
+        if(isNaN(result)){
+            display.value='Math Error'
+            throw new Error('Math Error');
+            
+        }
+        else{
+            display.value=result
+        }
         console.log(result);
+       
     }
     catch(e){
         console.error("Enter the valid expression")
