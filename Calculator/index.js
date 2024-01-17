@@ -1,10 +1,11 @@
 const display=document.getElementById('display');
 
-
 function numbers(value){
-    if(display.value=='0'){
+
+    if(display.value=='0' || display.value=='Math Error' || display.value=='Infinity'){
         display.value=value;
     }
+   
    else{
     display.value+=value;
    }
@@ -23,6 +24,7 @@ function equals(){
        
         if(isNaN(result)){
             display.value='Math Error'
+            console.log(result);
             throw new Error('Math Error');
             
         }
