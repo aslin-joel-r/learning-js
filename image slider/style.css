@@ -1,12 +1,16 @@
+h1{
+    text-align: center;
+    font-family: sans-serif;
+}
 .slider{
     margin-left: 100px;
     position: relative;
     margin: auto;
-    width: 550px;
-    margin-left: 100px;
+    width: 450px;
+    margin-left:auto;
     border-radius: 15px;
     box-shadow: 5px 5px 25px purple;
-    height: 250px;
+    height: 220px;
     padding: 30px;
 }
 img{
@@ -18,10 +22,13 @@ img{
 
 button{
     position:absolute;
-    font-size:30px;
+    font-size:40px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-80%);
     padding: 10px 15px;
+    background-color: white;
+    color: purple;
+    border: none;
     
 }
 #prev{

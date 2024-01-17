@@ -4,9 +4,9 @@ const next=document.getElementById('next');
 
 let slideIndex=0;
 console.log(images)
- images[slideIndex].style.display='block'
+images[slideIndex].style.display='block'
 
- //setInterval(nextItem,3000)
+setInterval(nextItem,3000)
 
 function previousItem(){
     
