@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <img src="images/lam3.jpeg" alt="lampogini blue">
-        <img src="images/lam2.jpeg" alt="lampogini yellow">
-        <img src="images/lam4.jpeg" alt="lampogini yellow">
-        <button>&#10096</button>
-        <button>&#10097</button>
+    <div class="slider">
+        <div class="slides">
+            <img src="images/lam3.jpeg" class="slide" alt="lampogini blue">
+            <img src="images/lam2.jpeg" class="slide" alt="lampogini yellow">
+            <img src="images/lam4.jpeg" class="slide" alt="lampogini yellow">
+        </div>
+        <button id="prev" onclick="previousItem()">&#10094</button>
+        <button id="next" onclick="nextItem()">&#10095</button>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>

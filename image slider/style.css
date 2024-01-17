@@ -1,4 +1,17 @@
+.slider{
+    margin-left: 100px;
+}
 img{
     height:200px;
     width:auto;
+}
+.slide{
+    display: none;
+    position: absolute;
+}
+button{
+    position: relative;
+    font-size:30px;
+    top: 300px;
+    left: 30px;
 }
