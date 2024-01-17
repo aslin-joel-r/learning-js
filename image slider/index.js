@@ -1,34 +1,25 @@
 const images=document.querySelectorAll('.slide');
-const previous=document.getElementById('prev');
-const next=document.getElementById('next');
 
 let slideIndex=0;
-console.log(images)
-images[slideIndex].style.display='block'
+const len=images.length;
 
-setInterval(nextItem,3000)
+images[slideIndex].style.display='block'
+setInterval(nextItem,5000)
 
 function previousItem(){
-    
-    images[slideIndex].style.display='none'
-    console.log('Before process:',slideIndex)
+    images[slideIndex].style.display='none';
     slideIndex--;
+
     if(slideIndex<0){
-        slideIndex=images.length-1
+        slideIndex=len-1
     }
-   
-    console.log('slide Index :',slideIndex)
-    //console.log('mod is :',slideIndex%=images.length)
     images[slideIndex].style.display='block'
 }
 function nextItem(){
-    console.log('slide Index :',slideIndex)
-    console.log('mod is :',slideIndex%=images.length)
-   
     images[slideIndex].style.display='none';
     slideIndex++;
-    if(slideIndex>=images.length){
-        slideIndex%=images.length
+    if(slideIndex>=len){
+        slideIndex%=len
     }
     images[slideIndex].style.display='block'
 }
