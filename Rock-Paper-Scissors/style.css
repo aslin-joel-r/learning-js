@@ -1,0 +1,16 @@
+body{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.role{
+    height: 120px;
+    width:120px;
+    font-size: 70px;
+    border-radius: 150px;
+    background-color: #ffb6ff;
+    cursor: pointer;
+}
+.role:hover{
+    background-color: rgb(188, 89, 188);
+}
