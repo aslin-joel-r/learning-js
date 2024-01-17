@@ -1,8 +1,15 @@
 body{
-    text-align: center;
+    
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+div{
+    margin: auto;
+    text-align: center;
+    border-radius: 30px;
+    height: 520px;
+    width: 450px;
+    box-shadow: 5px 5px 25px purple;
+}
 .role{
     height: 120px;
     width:120px;
@@ -13,4 +20,7 @@ body{
 }
 .role:hover{
     background-color: rgb(188, 89, 188);
+}
+#status{
+    color:purple
 }
