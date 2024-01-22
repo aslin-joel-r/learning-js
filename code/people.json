@@ -1,0 +1,21 @@
+[
+    {
+        "name":"aslin",
+        "age": 21,
+        "lazy" : true,
+        "address":629802
+    }
+    ,
+    {
+        "name":"albert",
+        "age":20,
+        "lazy":false,
+        "address":629676
+    }
+    ,{
+        "name":"Roshan Lal",
+        "age":22,
+        "lazy":false,
+        "address":629567
+    }
+]
