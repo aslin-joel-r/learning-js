@@ -28,8 +28,14 @@ function trash() {
   })
 }
 
-dog().then(value=>{console.log(value);sweep().then(value=>{
-    console.log(value);trash().then(value=>{
-        console.log(value)
-    })
-})}).catch(error=>console.log(error))
+async function all(){
+  let a= await dog();
+    console.log(a)
+let b= await sweep();
+console.log(b)
+let c=await trash();
+console.log(c);
+console.log("All Done !")
+
+}
+all();
