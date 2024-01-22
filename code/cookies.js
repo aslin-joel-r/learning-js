@@ -11,7 +11,7 @@ function deleteCookie(name) {
 
 console.log(document.cookie);
 
-getCookie('Hersho')
+getCookie('Vijesh')
 
 function getCookie(name){
     let cokie=document.cookie
@@ -19,7 +19,11 @@ function getCookie(name){
     data.forEach((elements)=>{
         if(elements.startsWith(name)){
             let element=elements.split('=')
-            console.log("Cookie value is : ",element[1])
+            if(element[0]==name){
+                console.log("Cookie value is : ",element[1])
+            }
+            
+           
     }
     
    });
