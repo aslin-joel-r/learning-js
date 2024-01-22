@@ -14,7 +14,7 @@ function sweep() {
                 resolve("Sweeping finished");
             }
             else{
-                reject("Not Sweeped")
+                reject("Not Sweeped");
             }
         }, 3000);
     })
@@ -23,12 +23,13 @@ function sweep() {
 function trash() {
   return new Promise((resolve,reject)=>{
     setTimeout(() => {
-        resolve("Trashed cleaned finished");
-        reject("Rejected")
+        resolve("Trash cleaned finished");
     }, 500);
   })
 }
 
-dog().then(value=>{console.log(value);return sweep()}).then(value=>{
-    console.log(value);return trash()
-}).then(value=>console.log(value)).catch(error=>console.log(error))
+dog().then(value=>{console.log(value);sweep().then(value=>{
+    console.log(value);trash().then(value=>{
+        console.log(value)
+    })
+})}).catch(error=>console.log(error))
