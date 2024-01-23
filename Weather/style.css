@@ -1,7 +1,38 @@
 body{
     text-align: center;
+  
 }
-
-#issue{
-    display: none;
+div{
+    margin: 0;
+    height: 450px;
+    width: 400px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 5px 5px 25px purple;
+    border-radius: 10px;
+}
+#input{
+    height: 30px;
+    width: 250px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+#submit{
+    height: 30px;
+    width: 80px;
+    font-size: 20px;
+    background-color: purple;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+}
+#city{
+    color:purple
+}
+#icon{
+    position:relative;
+    top: -60px;
+    font-size: 70px;
 }

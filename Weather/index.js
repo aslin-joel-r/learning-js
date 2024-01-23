@@ -9,9 +9,8 @@ let icons=document.getElementById('icon');
 let err=document.getElementById('issue');
 
 function submit(){
-    const inp=document.getElementById('input').value;
-
-    city=inp;
+    const city_name=document.getElementById('input').value;
+    city=city_name;
     getWeather()
 }
 
@@ -19,7 +18,9 @@ async function getWeather(){
     try{
         const response= await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}`);
         console.log(response)
+
         let list=document.querySelectorAll('.weather-report');
+
         if(!response.ok){
             let list=document.querySelectorAll('.weather-report');
             console.log(list)
@@ -31,7 +32,7 @@ async function getWeather(){
             throw new Error("There is a Bug");
            
         }
-
+        err.style.display='none'
         list.forEach(element => {
             element.style.display='block'
         });
@@ -39,13 +40,13 @@ async function getWeather(){
 
         city_dname.textContent=data.name;
         temp.textContent=`Temperature : ${data.main.temp}`;
-        humidity.textContent=`Humidity : ${data.main.humidity}`;
+        humidity.textContent=`Humidity : ${data.main.humidity}%`;
         appearance.textContent=data.weather[0].description;
         let icon_id = data.weather[0].id;
         console.log(icon_id);
         
         switch (true) {
-            case (icon_id >=211 && icon_id< 300):
+            case (icon_id >=200 && icon_id< 300):
                 icons.textContent = '⛈';
                 console.log("yesss");
                 break;
@@ -68,9 +69,7 @@ async function getWeather(){
                 icons.textContent = '⛅';
                 break;
         }
-        
-     //   console.log(data)
-        // appearance=data[main].humidity;
+      
     }
     catch(error){
         console.log(error)
