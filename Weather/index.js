@@ -1,5 +1,5 @@
 const api_key='da2055a1cb4e7e09582dd43230564398';
-let city='mumbai';
+let city='israel';
 
 let city_dname=document.getElementById('city');
 const temp=document.getElementById('temp');
@@ -30,8 +30,35 @@ async function getWeather(){
         temp.textContent=`Temperature : ${data.main.temp}`;
         humidity.textContent=`Humidity : ${data.main.humidity}`;
         appearance.textContent=data.weather[0].description;
-        icons.textContent=data.weather[0].icon;
-        console.log(data)
+        let icon_id = data.weather[0].id;
+        console.log(icon_id);
+        
+        switch (true) {
+            case (icon_id >=211 && icon_id< 300):
+                icons.textContent = '⛈';
+                console.log("yesss");
+                break;
+            case (icon_id >= 300 && icon_id < 500):
+                icons.textContent = '⛈';
+                break;
+            case (icon_id >= 500 && icon_id < 600):
+                icons.textContent = '🌧';
+                break;
+            case (icon_id >= 600 && icon_id < 700):
+                icons.textContent = '❄';
+                break;
+            case (icon_id >= 700 && icon_id < 800):
+                icons.textContent = '🌫';
+                break;
+            case (icon_id == 800):
+                icons.textContent = '🌞';
+                break;
+            case (icon_id > 800):
+                icons.textContent = '⛅';
+                break;
+        }
+        
+     //   console.log(data)
         // appearance=data[main].humidity;
     }
     catch(error){
