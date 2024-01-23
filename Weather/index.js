@@ -20,6 +20,8 @@ async function getWeather(){
         console.log(response)
 
         let list=document.querySelectorAll('.weather-report');
+        let temperature;
+        let icon_id;
 
         if(!response.ok){
             let list=document.querySelectorAll('.weather-report');
@@ -39,10 +41,11 @@ async function getWeather(){
         const data=await response.json();
 
         city_dname.textContent=data.name;
-        temp.textContent=`Temperature : ${data.main.temp}`;
+        temperature=(data.main.temp-32)*5/9;
+        temp.textContent=`Temperature : ${temperature.toFixed(2)}℃`;
         humidity.textContent=`Humidity : ${data.main.humidity}%`;
         appearance.textContent=data.weather[0].description;
-        let icon_id = data.weather[0].id;
+        icon_id = data.weather[0].id;
         console.log(icon_id);
         
         switch (true) {
@@ -51,7 +54,7 @@ async function getWeather(){
                 console.log("yesss");
                 break;
             case (icon_id >= 300 && icon_id < 500):
-                icons.textContent = '⛈';
+                icons.textContent = '☔️';
                 break;
             case (icon_id >= 500 && icon_id < 600):
                 icons.textContent = '🌧';
@@ -75,4 +78,5 @@ async function getWeather(){
         console.log(error)
     }
 }
+
 getWeather()

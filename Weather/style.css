@@ -3,7 +3,7 @@ body{
   
 }
 div{
-    margin: 0;
+    margin: auto;
     height: 450px;
     width: 400px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
