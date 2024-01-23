@@ -1,7 +1,10 @@
 async function getPoke(){
-    const pokemon=document.getElementById('pokemon').value;
+
+    let pokemon=document.getElementById('pokemon').value;
+    pokemon=pokemon.toLowerCase();
     const img=document.getElementById('image');
     let err=document.getElementById('error');
+
     try{
         let response=await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
         console.log(response)
@@ -12,12 +15,13 @@ async function getPoke(){
             err.style.color='red';
             throw new Error("Enter the valid Pokemon");
         }
+
         err.style.display='none'
         const data=await response.json();
         console.log(data)
         img.style.display='block';
-        let a =data.sprites.front_default;
-        img.src=a;
+        let front_img =data.sprites.front_default;
+        img.src=front_img;
     }
     catch(error){
         console.log(error);
