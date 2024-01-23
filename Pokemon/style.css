@@ -1,3 +1,38 @@
-body{
+body {
+    
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+div{
+  
+    margin:auto;
     text-align: center;
+    box-shadow: 5px 15px 25px purple;
+    border-radius: 20px;
+    height: 300px;
+    width: 500px;
+    padding: 20px;
+}
+#pokemon{
+    height: 25px;
+    width: 250px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid purple;
+    border-radius: 3px;
+}
+img{
+    margin-left:120px;
+    height: 200px;
+    width: 180px;
+}
+#get{
+    height:30px;
+    width: 70px;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
 }
