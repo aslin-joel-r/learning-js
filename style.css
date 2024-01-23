@@ -2,3 +2,40 @@ img{
     height:400px;
     width:700px;
 }
+h1{
+    text-align: center;
+    color: purple;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+span {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+div {
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 15px purple;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+
+    border-radius: 5px; /* Optional: Add rounded corners for better visual appearance */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Optional: Style the divs for better visual appearance */
+div {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    background-color: #fff;
+}
