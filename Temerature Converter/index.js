@@ -1,32 +1,21 @@
+let type;
+let temp;
 
-// let a=['apple','orange','mango']
-// let e=['grapes','tomato','berry']
+let display=document.getElementById("display")
 
-// create a 5 variables each  which stores any food
-let a='apple'
-let b='orange'
-let c='mango'
-let d='grapes'
-let e='tomato'
-let f='berry'
+function tempCalculator(){
 
-function hello(...foods){
-    console.log(...foods)
-}
+    let f=document.getElementById('kel');
+    let fahrenheit,celcius;
+    temp=document.getElementById("inp").value;
+    temp=Number(temp);
 
-hello(a,b,c,d,e,f)
-
-function add(...nums){
-    let sum=0;
-    for(let i of nums){
-        sum+=i;
+    if(f.checked){
+        celcius=(temp-32)*5/9;
+        display.textContent=`${celcius.toFixed(2)} °C`;
     }
-    
-    console.log(sum);
+    else{
+        fahrenheit=temp*(9/5)+32
+        display.textContent=`${fahrenheit.toFixed(2)} °F`
+    }
 }
-
-add(2,3,4,5,6,7,8,9,0)
-
-let user=[1,1,2,3,4,5,6]
-
-console.log(...user)
