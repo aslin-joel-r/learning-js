@@ -1,29 +1,40 @@
 const api_key='da2055a1cb4e7e09582dd43230564398';
-let city='israel';
+let city='chennai';
 
 let city_dname=document.getElementById('city');
 const temp=document.getElementById('temp');
 const humidity=document.getElementById('humidity');
 let appearance=document.getElementById('appearance');
 let icons=document.getElementById('icon');
-let err=document.getElementById('error');
+let err=document.getElementById('issue');
 
 function submit(){
     const inp=document.getElementById('input').value;
 
     city=inp;
-    console.log(city)
+    getWeather()
 }
 
 async function getWeather(){
     try{
         const response= await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}`);
         console.log(response)
-
+        let list=document.querySelectorAll('.weather-report');
         if(!response.ok){
-            throw new Error("There is a Bug")
+            let list=document.querySelectorAll('.weather-report');
+            console.log(list)
+            list.forEach(element => {
+                element.style.display='none'
+            });
+            err.style.display='block'
+            err.textContent='Enter the Valid City'
+            throw new Error("There is a Bug");
+           
         }
 
+        list.forEach(element => {
+            element.style.display='block'
+        });
         const data=await response.json();
 
         city_dname.textContent=data.name;
