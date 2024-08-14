@@ -1,5 +1,7 @@
 let list = ['Aslin', 'Manoj', 'Sherin', 'Andrea', 'Beenu', 'Jose', 'Adeno', 'Priya', 'Sija', 'Sreejith', 'Riswin', 'Hannibal']; 
 
+
+
 function generate() {
     // Generate a random index based on the length of the list
     let randomIndex = Math.floor(Math.random() * list.length);
