@@ -1,14 +1,12 @@
-let value=0;
-let min;
-let max;
+let list = ['Aslin', 'Manoj', 'Sherin', 'Andrea', 'Beenu', 'Jose', 'Adeno', 'Priya', 'Sija', 'Sreejith', 'Riswin', 'Hannibal']; 
 
-function reset(){
-    value=0;
-    document.getElementById("display").textContent=value;
-}
-function generate(){
-    min=document.getElementById('min').value;
-    max=document.getElementById('max').value;
-    value=Math.round(Math.random()*(max-min))+Number(min);
-    document.getElementById("display").textContent=value;
+function generate() {
+    // Generate a random index based on the length of the list
+    let randomIndex = Math.floor(Math.random() * list.length);
+    
+    // Get the name from the list at the random index
+    let selectedPerson = list[randomIndex];
+    
+    // Display the selected person in the 'friend' element
+    document.getElementById('friend').innerText = `The Black Sheep is: ${selectedPerson}`;
 }
