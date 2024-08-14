@@ -8,5 +8,5 @@ function generate() {
     let selectedPerson = list[randomIndex];
     
     // Display the selected person in the 'friend' element
-    document.getElementById('friend').innerText = `The Black Sheep is: ${selectedPerson}`;
+    document.getElementById('friend').innerText = ` ${selectedPerson}`;
 }
